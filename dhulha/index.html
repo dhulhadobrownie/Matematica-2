@@ -10,9 +10,14 @@
     </div>
 </section>
 
-<section id="galeria">
-    <h2 class="text-center pt-5">Galeria</h2>
     <div class="container p-3 mt-3 fundo-galeria">
+        <section id="galeria">
+                <h2 class="text-center pt-5">Galeria</h2>
+                <section> id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+                    <h2 class="text-center pt-5">Galeria</h2>
+                    <div class="container p-3 mt-3 fundo-galeria">
+                     </div>
+            </section>
 
             <div class="row justify-content-md-center">
                     <div class="col-md-4">
@@ -31,7 +36,8 @@
                     <div class="col-md-4">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Peace_Lily_2.jpg/120px-Peace_Lily_2.jpg"
                                     class="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/2093Peace_Lily_in_the_Philippines_08.jpg/330px-2093Peace_Lily_in_the_Philippines_08.jpg" loading="lazy">
-                    </div>
+                    
+                                </div>
             </div>
      </div>
 </section>
@@ -56,29 +62,18 @@
             <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
             <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
-            <div id="acessibilidade">
-                <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-                <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
-            </div>
+        <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                        <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                        <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                        <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>
+                </div>
     </nav>
 </header>
 
 <script src="script.js"></script>
 
-<button id="botao-acessibilidade" class="btn btn-primary fw-bold">acessibilidade</button>
-<div id="acessibilidade">
-    <button id="botao-acessibilidade" class="btn btn-primary fw-bold">acessibilidade</button>
-    <div id="opcoes-acessibilidade">
-      <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-      <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
-    </div>
-  </div>
-  <div id="acessibilidade" class="menu-acessibilidade">
-    <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">acessibilidade</button>
-    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-      <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-      <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
-    </div>
-  </div>
 
-        
+
+  <style src="style.css"></style>
