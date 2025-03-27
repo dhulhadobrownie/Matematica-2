@@ -1,26 +1,35 @@
-p {
-    line-height: 3px; /* tamanho da altura de cada linha */
-    letter-spacing: 3px; /* tamanho do espaço entre cada letra */
-    word-spacing: 5px; /* tamanho do espaço entre cada palavra */
-    text-indent: 30px; /* tamanho da margem da primeira linha do texto */
-  }
-  h1 {
-    border-top: 1px solid #a11717; /* borda vermelha em cima */
-    border-right: 1px solid red; /* borda vermelha à direita */
-    border-bottom: 1px solid red; /* borda vermelha embaixo */
-    border-left: 1px solid red; /* borda vermelha à esquerda */
-  }   
-  /* deixando o fundo amarelo ouro */
-  body {
-      background-color: gold;
-  }
-  h1 {
-    color: red;
-}
 
-h2 {
-    background-color: yellow;
+:root {
+  --laranja-claro: #FF862A;
+  --alto-contraste-fundo: #000000;
+  --alto-contraste-texto: #ffffff;
+  --alto-contraste-link: #ffd700;
 }
-h3 {
-    background-color: #f2eded;
+.alto-contraste{
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
+}
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+.alto-contraste .nav-link{
+  color: var(--alto-contraste-link);
+}
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+.alto-contraste #tropicalia {
+  background: none;
+}
+.alto-contraste #galeria {
+  background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+  background: none;
 }
